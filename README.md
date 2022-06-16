@@ -11,5 +11,6 @@ The following image shows the web application's appearance and functionality:
 ![The Password Generator application displays a red button to "Generate Password".](/assets/images/passwordGenerator.png)
 
 
-##Live Preview
+## Live Preview
+
 You can see a live preview of my page here: https://azm89.github.io/simple-password-generator/
