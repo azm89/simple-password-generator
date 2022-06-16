@@ -13,4 +13,5 @@ The following image shows the web application's appearance and functionality:
 
 ## Live Preview
 
-You can see a live preview of my page here: https://azm89.github.io/simple-password-generator/
+You can see a live preview of my page here: 
+https://azm89.github.io/simple-password-generator/
