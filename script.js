@@ -22,7 +22,7 @@ generateButton.addEventListener("click", writePassword);
 function getLength() {
   length = Number(
     prompt(
-      "How many characters would you like your password to be?\nPlease choose a value between 12 and 128."
+      "How many characters would you like your password to be?\nPlease choose a value between 8 and 128."
     )
   );
   console.log("The user chose " + length);
@@ -31,12 +31,12 @@ function getLength() {
 //ensures user selects a valid response or ends function if they cancel
 function confirmLength() {
   do {
-    length = Number(prompt("You must choose a number between 12 and 128."));
+    length = Number(prompt("You must choose a number between 8 and 128."));
     if (length === 0) {
       console.log("The user cancelled out of the prompt.");
       return;
     }
-  } while (isNaN(length) || length < 12 || length > 128);
+  } while (isNaN(length) || length < 8 || length > 128);
 }
 
 //gets the user's password criteria
@@ -44,7 +44,7 @@ function getCriteria() {
   getLength();
   if (length === 0) {
     console.log("The user cancelled out of the prompt.");
-  } else if (isNaN(length) || length < 12 || length > 128) {
+  } else if (isNaN(length) || length < 8 || length > 128) {
     confirmLength();
   } else {
     console.log("The password will be " + length + " characters long.");
